@@ -32,6 +32,10 @@ img{
     display: block;
 }
 
+button{
+    padding: 0;
+}
+
 .section-header{
     line-height: 1.111;
     font-weight: 700;
