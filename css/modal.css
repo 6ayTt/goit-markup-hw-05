@@ -77,10 +77,12 @@
     padding: 8px 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    background-color: #FCFCFC;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
+    
 }
 
 .modal-input:focus {
@@ -178,10 +180,13 @@
     font-weight: 400;
 }
 
-.modal-button{
+.form-button{
     display: flex;
-    align-self: flex-end;
     justify-content: center;
+    margin-top: 24px;
+}
+
+.modal-button{
     color: #FFFFFF;
     background-color: #4D5AE5;
     border: none;
