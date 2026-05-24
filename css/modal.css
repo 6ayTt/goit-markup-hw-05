@@ -1,4 +1,4 @@
-.backdroup{
+.backdrop{
     position:fixed;
     top: 0;
     left: 0;
@@ -11,15 +11,17 @@
     justify-content: center;
     pointer-events: none;
     opacity: 0;
+    visibility: hidden;
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
 }
 
-.backdroup.is-open{
+.backdrop.is-open{
     pointer-events: auto;
     opacity: 1;
+    visibility: visible;
 }
 
 .modal{
@@ -30,7 +32,7 @@
     padding: 72px 24px 24px 24px;
     position: relative;
     border-radius: 4px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .close{
@@ -38,7 +40,8 @@
     top: 24px;
     right: 24px;
     line-height: 0;
-    padding: 7px;
+    width: 24px;
+    height: 24px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     fill: #2E2F42;
     background-color: #E7E9FC;
@@ -75,7 +78,7 @@
     font-size: 12px;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    line-height: 1,16667;
+    line-height: 1.17;
     font-weight: 400;
     margin-bottom: 4px;
 }
@@ -117,8 +120,13 @@
 .modal-input:focus + .input-icon{
     fill: #4D5AE5;
 }
+.modal-form-wrapper-comment{
+    padding-bottom: 0;
+    margin-bottom: 16px;
+}
 
 .modal-comment{
+    display: flex;
     resize: none;
     width: 100%;
     height: 120px;
@@ -127,8 +135,8 @@
     border: 1px solid rgba(46, 47, 66, 0.4);
     font-weight: 400;
     font-size: 12px;
-    letter-spacing: 0.04px;
-    line-height: 1, 16667;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,8 +146,8 @@
 .modal-comment::placeholder{
     font-weight: 400;
     font-size: 12px;
-    letter-spacing: 0.04px;
-    line-height: 1,16667;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
     color: rgba(46, 47, 66, 0.4);
 }
 
@@ -189,7 +197,7 @@
     font-size: 12px;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    line-height: 1,16667;
+    line-height: 1.17;
     font-weight: 400;
 }
 
@@ -198,7 +206,7 @@
     color: #4D5AE5;
     font-size: 12px;
     letter-spacing: 0.04em;
-    line-height: 1,16667;
+    line-height: 1.17;
     font-weight: 400;
 }
 
